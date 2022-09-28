@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do</title>
+	<meta charset="utf-8">
+	<meta name="robots" content="index,follow" />
+	<meta name="author" content="Abdelhamid SAIDI">
+	<meta name="description" content="My name is Abdelhamid Saidi,I’m 18 years old and I’m a Freelance Full Stack Developer and Graphic Designer based in Bejaia, Algeria, here is one of my projects">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div id="loader">
+		<div>
+			<span class="td" id="to">T O</span>
+			<span class="td" id="do">D O</span>
+		</div>
+	</div>
+
+	<div id="imgdarck"></div>
+	<div id="imglight"></div>
+
+	<div id="container">
+		<header>
+			T O D O
+			<button id="btn"></button>
+			<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" id="sun"><path fill="#FFF" fill-rule="evenodd" d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"/></svg>
+			<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" id="moon"><path fill="#FFF" fill-rule="evenodd" d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"/></svg>
+			
+		</header>
+		<form id="frm">
+			<div id="crcl1"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" id="chec1" style="opacity: 0;transition-duration: 0.2s;"><path fill="none" stroke="#FFF" stroke-width="1.5" d="M1 4.304L3.696 7l6-6"/></svg></div>
+			<button id="bcrcl"></button>
+
+			<input type="text" name="itms" placeholder="Create a new todo..." id="itms" autocomplete="off">
+		</form>
+
+		<div id="tach" >
+			<div id="inv">
+				<div id="tachs">
+				</div>
+			</div>
+
+			<div id="opt">
+				<p id="itmlft">0 items left</p>
+				<button id="clrcmp">Clear Complited</button>
+				<div id="slect">
+					<input type="radio" name="rdo" class="clcs" id="clc1">
+					<input type="radio" name="rdo" class="clcs" id="clc2">
+					<input type="radio" name="rdo" class="clcs" id="clc3">
+					<label class="clc active" for="clc1">All</label>
+					<label class="clc " for="clc2">Active</label>
+					<label class="clc " for="clc3">Complited</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<p id="drg">Do what you have To Do</p>
+	<script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
